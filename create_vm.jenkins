@@ -1,0 +1,18 @@
+#!groovy
+properties([disableConcurrentBilds()])
+
+pipeline {
+  agent {
+    label 'master'
+  }
+  options{
+    timestamps()
+  }
+  stages {
+    stage('Create virtual machine') {
+      steps {
+        pwd
+      }
+    }
+  }
+}
