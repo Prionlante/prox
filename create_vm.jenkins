@@ -2,6 +2,9 @@
 properties([disableConcurrentBuilds()])
 
 pipeline {
+ agent {
+    label 'Мастер'
+  }
   options{
     timestamps()
   }
