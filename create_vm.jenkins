@@ -11,7 +11,7 @@ pipeline {
   stages {
     stage('Create virtual machine') {
       steps {
-        sh 'pwd'
+        sh 'pwd; ls'
       }
     }
   }
