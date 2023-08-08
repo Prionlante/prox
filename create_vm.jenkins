@@ -3,7 +3,7 @@ properties([disableConcurrentBilds()])
 
 pipeline {
   agent {
-    label 'master'
+    label 'scrpt'
   }
   options{
     timestamps()
