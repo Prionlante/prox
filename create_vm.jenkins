@@ -12,7 +12,7 @@ pipeline {
   stages {
     stage('Create virtual machine') {
       steps {
-        sh 'pwd; ls'
+        sh 'echo \'hi, lol\''
       }
     }
   }
