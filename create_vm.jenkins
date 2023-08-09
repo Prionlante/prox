@@ -5,6 +5,7 @@ pipeline {
  agent {
     label 'prox'
   }
+  triggers { pollSCM('* * * * *') }
   options{
     timestamps()
   }
